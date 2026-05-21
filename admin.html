@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Админ-панель - Сокровищница</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container header-flex">
+            <div class="logo">🏺 Сокровищница</div>
+            <nav>
+                <a href="index.html">Главная</a>
+                <a href="catalog.html">Каталог</a>
+                <a href="about.html">О нас</a>
+                <a href="contacts.html">Контакты</a>
+                <a href="cart.html">🛒 Корзина (<span id="cartCount">0</span>)</a>
+                <a href="profile.html" id="profileLink" class="active">👤 Профиль</a>
+                <a href="login.html" id="authLink">🔑 Вход</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="page-banner">
+        <div class="container">
+            <h1>Административная панель</h1>
+            <p>Управление товарами и заказами</p>
+        </div>
+    </div>
+
+    <div class="container page-content">
+        <div class="admin-container">
+            <div class="admin-sidebar">
+                <button class="admin-nav-btn active" data-admin-tab="products">📦 Управление товарами</button>
+                <button class="admin-nav-btn" data-admin-tab="orders">📋 Управление заказами</button>
+                <button class="admin-nav-btn" data-admin-tab="users">👥 Пользователи</button>
+                <button class="admin-nav-btn logout-btn" onclick="logout()">🚪 Выйти</button>
+            </div>
+            <div class="admin-content">
+                <div id="productsTab" class="admin-tab active">
+                    <div class="admin-header">
+                        <h2>Товары</h2>
+                        <button class="btn-primary" onclick="showAddProductModal()">+ Добавить товар</button>
+                    </div>
+                    <div class="products-table" id="adminProductsTable"></div>
+                </div>
+                <div id="ordersTab" class="admin-tab">
+                    <h2>Заказы</h2>
+                    <div class="orders-table" id="adminOrdersTable"></div>
+                </div>
+                <div id="usersTab" class="admin-tab">
+                    <h2>Пользователи</h2>
+                    <div class="users-table" id="adminUsersTable"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Добавить/Редактировать товар</h2>
+            <form id="productForm">
+                <input type="hidden" id="productId">
+                <div class="form-group">
+                    <label>Название товара</label>
+                    <input type="text" id="productName" required>
+                </div>
+                <div class="form-group">
+                    <label>Цена (₽)</label>
+                    <input type="number" id="productPrice" required>
+                </div>
+                <div class="form-group">
+                    <label>URL изображения</label>
+                    <input type="text" id="productImage">
+                </div>
+                <div class="form-group">
+                    <label>Описание</label>
+                    <textarea id="productDescription" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn-primary">Сохранить</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Сокровищница</h4>
+                    <p>Ваш проводник в мир антиквариата с 2010 года</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Контакты</h4>
+                    <p>📞 +7 (495) 123-45-67</p>
+                    <p>✉️ info@antiquetreasures.ru</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Режим работы</h4>
+                    <p>Пн-Пт: 10:00 - 20:00</p>
+                    <p>Сб-Вс: 11:00 - 18:00</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Сокровищница. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

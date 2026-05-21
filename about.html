@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О нас - Сокровищница</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container header-flex">
+            <div class="logo">🏺 Сокровищница</div>
+            <nav>
+                <a href="index.html">Главная</a>
+                <a href="catalog.html">Каталог</a>
+                <a href="about.html" class="active">О нас</a>
+                <a href="contacts.html">Контакты</a>
+                <a href="cart.html">🛒 Корзина (<span id="cartCount">0</span>)</a>
+                <a href="profile.html" id="profileLink">👤 Профиль</a>
+                <a href="login.html" id="authLink">🔑 Вход</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="page-banner">
+        <div class="container">
+            <h1>О нашем магазине</h1>
+            <p>История, традиции и любовь к прекрасному</p>
+        </div>
+    </div>
+
+    <div class="container page-content">
+        <div class="about-section">
+            <div class="about-grid">
+                <div class="about-text">
+                    <h2>Кто мы?</h2>
+                    <p>Мы основаны в 2010 году коллекционерами для коллекционеров. Сокровищница — это не просто магазин, это сообщество ценителей истории и искусства. Каждый предмет в нашей коллекции проходит тщательную историческую экспертизу и аутентификацию.</p>
+                    
+                    <h2>Наша миссия</h2>
+                    <p>Сохранять культурное наследие и дарить вещам вторую жизнь. Мы верим, что каждый антикварный предмет хранит уникальную историю, и наша задача — найти для него достойного хранителя.</p>
+                    
+                    <h2>Что мы предлагаем?</h2>
+                    <ul class="about-list">
+                        <li>🕰️ Старинные часы XIX-XX веков</li>
+                        <li>🪑 Антикварная мебель ручной работы</li>
+                        <li>🏺 Фарфор и керамика известных заводов</li>
+                        <li>📚 Редкие книги и манускрипты</li>
+                        <li>💎 Ювелирные украшения антик</li>
+                        <li>🖼️ Живопись и графика</li>
+                    </ul>
+                </div>
+                <div class="about-image">
+                    <img src="images/shop.webp" alt="Наш магазин">
+                </div>
+            </div>
+            
+            <div class="team-section">
+                <h2>Наша команда</h2>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <div class="member-photo"><img src="images/anna.jpg"></div>
+                        <h3>Анна Терёхина</h3>
+                        <p class="member-position">Главный искусствовед</p>
+                        <p class="member-desc">Эксперт по живописи XIX века, выпускница МГУ им. Ломоносова. Опыт работы более 15 лет.</p>
+                        <div class="member-social">
+                            <a href="#">📧</a>
+                            <a href="#">💼</a>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-photo"><img src="images/mih.jpg"></div>
+                        <h3>Михаил Эккерт</h3>
+                        <p class="member-position">Эксперт-реставратор</p>
+                        <p class="member-desc">Специалист по фарфору и керамике, восстановил более 500 уникальных предметов.</p>
+                        <div class="member-social">
+                            <a href="#">📧</a>
+                            <a href="#">💼</a>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-photo"><img src="images/elena.jpg"></div>
+                        <h3>Елена Авинова</h3>
+                        <p class="member-position">Специалист по ювелирным украшениям</p>
+                        <p class="member-desc">Сертифицированный геммолог, член Гильдии ювелиров России.</p>
+                        <div class="member-social">
+                            <a href="#">📧</a>
+                            <a href="#">💼</a>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-photo"><img src="images/olga.jpg"></div>
+                        <h3>Ольга Козловская</h3>
+                        <p class="member-position">Эксперт по редким книгам</p>
+                        <p class="member-desc">Библиограф, кандидат исторических наук. Специализируется на прижизненных изданиях XVIII-XIX веков.</p>
+                        <div class="member-social">
+                            <a href="#">📧</a>
+                            <a href="#">💼</a>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-photo"><img src="images/vit.jpg"></div>
+                        <h3>Виталий Петрушин</h3>
+                        <p class="member-position">Мастер-часовщик</p>
+                        <p class="member-desc">Потомственный часовщик, реставрирует механизмы XIX века с ручной доработкой деталей.</p>
+                        <div class="member-social">
+                            <a href="#">📧</a>
+                            <a href="#">💼</a>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-photo"><img src="images/sofia.jpg"></div>
+                        <h3>София Бруновская</h3>
+                        <p class="member-position">Археолог-антиковед</p>
+                        <p class="member-desc">Специалист по античным древностям, участник международных раскопок в Италии и Греции.</p>
+                        <div class="member-social">
+                            <a href="#">📧</a>
+                            <a href="#">💼</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="trust-section">
+                <h2>Нам доверяют</h2>
+                <div class="trust-grid">
+                    <div class="trust-item">
+                        <div class="trust-number">2000+</div>
+                        <p>Успешных сделок</p>
+                    </div>
+                    <div class="trust-item">
+                        <div class="trust-number">15+</div>
+                        <p>Лет на рынке</p>
+                    </div>
+                    <div class="trust-item">
+                        <div class="trust-number">98%</div>
+                        <p>Довольных клиентов</p>
+                    </div>
+                    <div class="trust-item">
+                        <div class="trust-number">6</div>
+                        <p>Сертифицированных экспертов</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Сокровищница</h4>
+                    <p>Ваш проводник в мир антиквариата с 2010 года</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Контакты</h4>
+                    <p>📞 +7 (495) 123-45-67</p>
+                    <p>✉️ info@antiquetreasures.ru</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Режим работы</h4>
+                    <p>Пн-Пт: 10:00 - 20:00</p>
+                    <p>Сб-Вс: 11:00 - 18:00</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Сокровищница. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
